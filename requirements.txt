@@ -1,0 +1,62 @@
+##########################################################
+# 📦 FinanceAI - Project Requirements
+# --------------------------------------------------------
+# This file contains all dependencies required to run
+# the FinanceAI Smart Money Assistant.
+#
+# Sections:
+#   1. Core Dependencies (required)
+#   2. Optional AI Features (for Hugging Face models)
+#   3. Notes & Setup Instructions
+##########################################################
+
+
+##############################
+# 1. CORE DEPENDENCIES
+##############################
+
+# Streamlit - Web app framework for building the chatbot UI
+streamlit>=1.33.0
+
+# Matplotlib - For financial data visualization and charts
+matplotlib>=3.8.0
+
+# NumPy - Numerical computations for charts and metrics
+numpy>=1.26.0
+
+
+##############################
+# 2. OPTIONAL AI FEATURES
+##############################
+
+# Hugging Face Transformers - Provides DialoGPT and other models
+transformers>=4.41.0
+
+# PyTorch - Backend required for running AI models efficiently
+torch>=2.2.0
+
+
+##############################
+# 3. NOTES & SETUP INSTRUCTIONS
+##############################
+
+# 👉 Quick Installation (Rule-Based Only)
+#    pip install streamlit matplotlib numpy
+#
+# 👉 Full Installation (with AI Model Support)
+#    pip install streamlit matplotlib numpy transformers torch
+#
+# 👉 Using requirements.txt (recommended)
+#    pip install -r requirements.txt
+#
+# 👉 Virtual Environment Setup
+#    python -m venv venv
+#    source venv/bin/activate   (Linux/Mac)
+#    venv\Scripts\activate    (Windows)
+#
+# 👉 Troubleshooting
+# - If model loading is slow, disable AI mode in sidebar
+# - Use rule-based mode for lightweight performance
+# - Ensure compatible GPU drivers if using torch with CUDA
+#
+##########################################################
